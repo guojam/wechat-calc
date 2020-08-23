@@ -9,8 +9,8 @@
 			<view class="calc-input-row">
 				<block wx:for="{{row}}" wx:for-item="col">
 					<view class="calc-input-col {{col.col?'calc-input-col-' + col.col: ''}}">
-						<view class="calc-button">
-							<button class="mini-btn" type="default" size="mini" bindtap="btnClick" data-key="{{col.btn}}">{{buttonText[col.btn] || col.btn}}</button>
+						<view class="calc-button-wrap">
+							<view class="calc-button" hover-class="calc-button-hover" bindtap="btnClick" data-key="{{col.btn}}">{{buttonText[col.btn] || col.btn}}</view>
 						</view>
 					</view>
 				</block>
@@ -18,5 +18,5 @@
 		</block>
 
 	</view>
-	
+
 </view>
