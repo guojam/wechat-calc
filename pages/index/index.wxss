@@ -1,0 +1,61 @@
+/**index.wxss**/
+
+.calc-page {
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 计算器结果显示区 */
+.calc-display {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 5px;
+  border-bottom: 1px solid #999;
+  text-align: right;
+  
+
+}
+
+/* 计算表达式 */
+.calc-expression {
+  font-size: 20px;
+  color: gray;
+}
+
+/* 计算结果 */
+.calc-result {
+  font-size: 30px;
+}
+
+/* 计算器输入区 */
+.calc-input {
+  flex-grow: 0;
+  padding: 10px 0;
+}
+
+/* 按钮行 */
+.calc-input-row {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.calc-input-col {
+  flex: 1 1 25%; 
+}
+.calc-input-col-2 {
+  flex: 2 1 50% ; 
+}
+
+.calc-button {
+  display: flex;
+  padding: 0 5px;
+}
+ 
+.mini-btn {
+  flex-grow: 1;
+}
